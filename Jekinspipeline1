@@ -6,12 +6,14 @@ pipeline
         stage("clone")
         {
             steps{
-                git
+                git "https://github.com/Bhuvanaramisetti/demo1_rep.git"
             }
         }
-        stage("bild")
+        stage("build")
         {
             steps{
+sh "javac hello.java"
+}
             }
         stage("run")
         {

@@ -19,7 +19,7 @@ sh "javac hello.java"
         {
             steps
             {
-                sh'javac java.hello'
+                sh'javac hello.java'
             }
         }
     }

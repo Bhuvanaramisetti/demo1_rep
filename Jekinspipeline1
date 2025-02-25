@@ -1,0 +1,24 @@
+pipeline
+{
+    agent any
+    stage
+    {
+        stage("clone")
+        {
+            steps{
+                git
+            }
+        }
+        stage("bild")
+        {
+            steps{
+            }
+        stage("run")
+        {
+            steps
+            {
+                sh'javac java.hello'
+            }
+        }
+    }
+}
